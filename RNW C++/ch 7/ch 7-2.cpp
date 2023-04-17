@@ -23,7 +23,7 @@ class cricket {
 class t20match : public cricket
 {
 	public :
-		void gettotalovers(int a){
+		void gettotalovers(){
 			cout<<"T20 match overs is :"<<a<<endl;
 			
 		}
@@ -32,17 +32,16 @@ class t20match : public cricket
 class testmatch : public cricket
 {
 	public :
-		void gettotalovers(int b){
+		void gettotalovers(){
 			cout<<"test match per day overs is :"<<b<<endl;
 			
 		}
 };
 
 main(){
-	cricket c1;
-	t20match t1;
-	testmatch t2;
-	c1.gettotalvoers();
-	t1.gettotalovers(c1.a);
-	t2.gettotalovers(c1.b);
+
+	
+	t2.cricket::gettotalvoers();
+	t2.t20match::gettotaloverss();
+	t2.gettotalvoers();
 }
